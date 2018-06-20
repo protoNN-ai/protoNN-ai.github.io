@@ -79,7 +79,7 @@ NAVIGATION_LINKS = {
     (
         ("/index.html", "About"),
         ("/dev.html", "Development"),
-        ("/index.html", "Team"),
+        ("/team.html", "Team"),
     )
 }
 
