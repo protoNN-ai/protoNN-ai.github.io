@@ -78,7 +78,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG:
     (
         ("/index.html", "About"),
-        ("/index.html", "Code"),
+        ("/dev.html", "Development"),
         ("/index.html", "Team"),
     )
 }
