@@ -57,20 +57,75 @@
         
         
 <article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header></header><div class="e-content entry-content" itemprop="articleBody text">
-    <h1 style="margin-top: 40px">ProtoNN: framework for code-agnostic, interactive prototyping of DNNs.</h1>
+    <header class="masthead text-center d-flex"><div class="container my-auto">
+        <div class="row">
+          <div class="col-sm- mx-auto">
+            <h1>
+              <strong><strong>protoNN</strong>: a framework for code-agnostic, interactive prototyping of DNNs</strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header><section class="bg-primary"><div class="container h-100">
+        <div class="row">
+          <div class="col-6 mx-auto text-center">
+            <h2 class="section-heading text-white">Tracking metadata and injecting parameters</h2>
+            <br><p class="text-white"> protoNN uses Python type hints to specify which parameters need to be tracked or modified</p>
+          </div>
+          <div class="col-6 mx-auto text-center">
+            <a href="listings/track.py.html">track.py</a>  <a href="listings/track.py">(Source)</a><table class="highlighttable"><tr>
+<td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td>
+<td class="code">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">protonn.parameters</span>
 
-<br><div class="container">
- More specifically, ProtoNN features include:
+<span class="nd">@protonn.parameters.view</span>
+<span class="k">def</span> <span class="nf">do_something</span><span class="p">():</span>
+    <span class="n">parameter_1</span> <span class="o">=</span> <span class="mi">42</span>  <span class="c1"># type: Observed</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">parameter_1</span><span class="p">)</span>
 
-<ul>
-<li> Transparent and elastic scheduling of DNN training jobs on modern HPC systems.</li>
-    <li> Monitoring and visualizing model parameters and computational performance statistics.</li>
-    <li> Perform semi-automatic hyperparameter tuning/optimization and architecture search using evolutionary algorithms.</li>
-    <li> A user-defined interactive interface to drive the framework/ design process, not bound to any particular framework.</li>
-    <li> Scaling the functionality and performance of the model as the resources increase. </li>
-</ul>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">do_something</span><span class="p">()</span>
+    <span class="n">protonn</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
+</pre></div>
+</td>
+</tr></table>
 </div>
-    </div>
+        </div>
+      </div>
+    </section><section><div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-6 text-center mx-auto ">
+            <h2 class="section-heading">Transparent and elastic scheduling of DNN training jobs on modern HPC systems</h2>
+          </div>
+          <div class="col-6 mx-auto text-center">
+            <img src="assets/img/protonn.svg">
+</div>
+        </div>
+      </div>
+    </section><section class="bg-primary" id="about"><div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="section-heading text-white">More features:</h2>
+  
+            <ul class="text-white">
+<li> Monitoring and visualizing model parameters and computational performance statistics.</li>
+                <li> Perform semi-automatic hyperparameter tuning/optimization and architecture search using evolutionary algorithms.</li>
+                <li> A user-defined interactive interface to drive the framework/ design process, not bound to any particular framework.</li>
+                <li> Scaling the functionality and performance of the model as the resources increase. </li>
+            </ul>
+</div>
+        </div>
+      </div></section>
+</div>
     
 
 </article><!--End of body content--><footer id="footer">
